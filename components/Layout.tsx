@@ -1,16 +1,11 @@
 import { PropsWithChildren } from "react";
 import NavBar from "./NavBar";
-import { useRouter } from "next/router";
-import Head from "next/head";
+import Seo from "./Seo";
+
 export default function Layout({ children }: PropsWithChildren) {
-    const { pathname } = useRouter();
-    console.log(pathname);
-    const titleName = pathname === "/" ? "HOME" : pathname.slice(1).toUpperCase();
     return (
         <>
-            <Head>
-                <title>{titleName} | NEXT MOVIES</title>
-            </Head>
+            <Seo />
             <NavBar />
             <div>{children}</div>
         </>
