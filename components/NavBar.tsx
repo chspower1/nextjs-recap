@@ -30,6 +30,9 @@ export default function NavBar() {
             <Link href="/about">
                 <NavBtn className={pathname === "/about" ? "active" : "none"}>About</NavBtn>
             </Link>
+            <Link href="/movies">
+                <NavBtn className={pathname === "/movies" ? "active" : "none"}>movies</NavBtn>
+            </Link>
         </Nav>
     );
 }

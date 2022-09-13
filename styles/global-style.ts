@@ -12,7 +12,7 @@ export const GlobalStyle = createGlobalStyle`
         display: none;
     }
     html{
-        font-size: 11px;
+        font-size: 16px;
         -webkit-text-size-adjust: none;
         font-family: -apple-system,BlinkMacSystemFont,helvetica,Apple SD Gothic Neo,sans-serif;       
         font-display: fallback;
