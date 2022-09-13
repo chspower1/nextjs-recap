@@ -32,7 +32,6 @@ export const GlobalStyle = createGlobalStyle`
             fill: #f2f3f4;
         }
     }
-
     .pc-tablet-only {
         display: block;
         ${media.mobile} {

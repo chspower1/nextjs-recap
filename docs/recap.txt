@@ -20,3 +20,24 @@
 
 9.SSR를 하고싶다면?
     -> export async function getServerSideProps(){}
+
+10.리액트에서 route params기능 Next에서 사용하기
+리액트 : movies/:id
+넥스트 : page폴더 / 하위경로폴더 / [name].tsx 
+
+
+
+
+문제점
+router.push(
+            {
+                pathname: `/movies/${title.toLowerCase().replace(reg, "").split(" ").join("-")}`,
+                query: {
+                    id,
+                },
+            },
+            `/movies/${title.toLowerCase().replace(reg, "").split(" ").join("-")}`
+        );
+    };
+)
+pathname과 마스킹url이 같지 않을 경우 query로 [title]만 넘어옴, 왜그런지 찾아봐야함
